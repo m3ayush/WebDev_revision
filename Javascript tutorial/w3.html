@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Using Constructor object</h2>
+    <p>using function</p>
+    
+
+    <p id="Hi">mk</p>
+    <script>
+        function fun(x,y,z){
+            this.name=x;
+            this.class=y;
+            this.age=z;
+        }
+        let person1=new fun("Ayush",12,18);   //this create an object with name person1
+        let person2=new fun("Piyush",9,15);
+        document.getElementById("Hi").innerHTML=
+        "Who is person 1?"+"- "+person1.name+"<br>" +"Who is person 2?"+"- "+person2.name;
+    </script>
+    
+</body>
+</html>
